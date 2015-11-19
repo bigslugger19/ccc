@@ -1,0 +1,43 @@
+<!doctype html>
+<html ng-app="CCC">
+<head>
+    <base href="/ui/">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title translate>global.app_name</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" href="/img/ccc-logo-32.png">
+
+    <!-- wro chokes on these -->
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/lib/bootstrap-fileinput/css/fileinput.min.css">
+    <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/lib/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="/lib/ui-select/dist/select.min.css">
+    <link rel="stylesheet" href="/lib/select2/dist/css/select2.min.css">
+    <link rel="stylesheet" href="/lib/selectize/dist/css/selectize.bootstrap3.css">
+    <link rel="stylesheet" href="/lib/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.min.css">
+    <link rel="stylesheet" href="/lib/angular-chart.js/dist/angular-chart.min.css">
+
+
+    <link rel="stylesheet" href="/lib/adminlte/dist/css/AdminLTE.min.css">
+    <link rel="stylesheet" href="/lib/adminlte/dist/css/skins/_all-skins.min.css">
+    <link rel="stylesheet" href="/lib/adminlte/plugins/iCheck/square/blue.css">
+    <link rel="stylesheet" href="/lib/ngToast/dist/ngToast.min.css">
+    <link rel="stylesheet" href="/lib/ngToast/dist/ngToast-animations.min.css">
+
+    <link rel="stylesheet" href="/css/ccc.css">
+
+</head>
+<body ng-cloak ng-controller="GlobalController as global"
+      ng-class="global.bodyClass">
+
+<toast></toast>
+
+<div ui-view style="height: 100%;"></div>
+
+<script src="/js/lib.js"></script>
+<script src="/js/ccc.js"></script>
+</body>
+</html>

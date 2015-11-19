@@ -1,0 +1,38 @@
+<groups xmlns="http://www.isdc.ro/wro">
+    <group name="lib">
+
+        <js>file:${project.basedir}/src/main/resources/public/lib/jquery/dist/jquery.min.js</js>
+        <js>file:${project.basedir}/src/main/resources/public/lib/bootstrap/dist/js/bootstrap.min.js</js>
+        <js>file:${project.basedir}/src/main/resources/public/lib/localforage/dist/localforage.min.js</js>
+        <js>file:${project.basedir}/src/main/resources/public/lib/moment/min/moment-with-locales.min.js</js>
+        <js>file:${project.basedir}/src/main/resources/public/lib/fuelux/dist/js/fuelux.min.js</js>
+        <js>file:${project.basedir}/src/main/resources/public/lib/sockjs-client/dist/sockjs.min.js</js>
+        <js>file:${project.basedir}/src/main/resources/public/lib/stomp-websocket/lib/stomp.min.js</js>
+        <js>file:${project.basedir}/src/main/resources/public/lib/stacktrace-js/dist/stacktrace.min.js</js>
+        <js>file:${project.basedir}/src/main/resources/public/lib/chartist/dist/chartist.min.js</js>
+
+        <js>file:${project.basedir}/src/main/resources/public/lib/adminlte/plugins/slimScroll/jquery.slimscroll.min.js</js>
+        <js>file:${project.basedir}/src/main/resources/public/lib/adminlte/plugins/fastclick/fastclick.min.js</js>
+        <js>file:${project.basedir}/src/main/resources/public/lib/adminlte/dist/js/app.min.js</js>
+        <js>file:${project.basedir}/src/main/resources/public/lib/adminlte/dist/js/demo.js</js>
+
+        <js>file:${project.basedir}/src/main/resources/public/lib/angular/angular.min.js</js>
+        <js>file:${project.basedir}/src/main/resources/public/lib/angular-resource/angular-resource.min.js</js>
+        <js>file:${project.basedir}/src/main/resources/public/lib/angular-sanitize/angular-sanitize.min.js</js>
+        <js>file:${project.basedir}/src/main/resources/public/lib/angular-ui-router/release/angular-ui-router.min.js</js>
+        <js>file:${project.basedir}/src/main/resources/public/lib/angular-bootstrap/ui-bootstrap-tpls.min.js</js>
+        <js>file:${project.basedir}/src/main/resources/public/lib/angular-localforage/dist/angular-localForage.min.js</js>
+        <js>file:${project.basedir}/src/main/resources/public/lib/ng-idle/angular-idle.min.js</js>
+        <js>file:${project.basedir}/src/main/resources/public/lib/angular-web-notification/angular-web-notification.js</js>
+        <js>file:${project.basedir}/src/main/resources/public/lib/ng-stomp/ng-stomp.min.js</js>
+        <js>file:${project.basedir}/src/main/resources/public/lib/ui-select/dist/select.min.js</js>
+        <js>file:${project.basedir}/src/main/resources/public/lib/angular-bootstrap-switch/dist/angular-bootstrap-switch.min.js</js>
+        <js>file:${project.basedir}/src/main/resources/public/lib/angular-chartist.js/dist/angular-chartist.min.js</js>
+    </group>
+    <group name="ccc">
+        <css>file:${project.basedir}/src/main/resources/public/less/importer.less</css>
+
+        <js>file:${project.basedir}/src/main/resources/public/app/app.module.js</js>
+        <js>file:${project.basedir}/src/main/resources/public/app/**.js</js>
+    </group>
+</groups>

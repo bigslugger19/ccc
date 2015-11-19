@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/lib/Chart.js" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/lib/HTML5-Desktop-Notifications" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/lib/HTML5-Desktop-Notifications2" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/lib/adminlte" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/lib/amstock3" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/lib/angular" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/lib/angular-animate" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/lib/angular-aria" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/lib/angular-audio" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/lib/angular-bootstrap" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/lib/angular-bootstrap-switch" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/lib/angular-chart.js" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/lib/angular-datatables" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/lib/angular-localforage" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/lib/angular-qrcode" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/lib/angular-resource" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/lib/angular-sanitize" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/lib/angular-translate" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/lib/angular-translate-loader-static-files" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/lib/angular-ui-bootstrap" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/lib/angular-ui-router" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/lib/angular-utf8-base64" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/lib/angular-web-notification" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/lib/bootstrap" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/lib/bootstrap-fileinput" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/lib/bootstrap-switch" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/lib/chartist" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/lib/datatables" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/lib/font-awesome" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/lib/fuelux" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/lib/iCheck" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/lib/ionicons" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/lib/jasmine-core" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/lib/jquery" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/lib/jquery.sparkline" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/lib/localforage" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/lib/microplugin" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/lib/moment" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/lib/ng-idle" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/lib/ng-stomp" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/lib/ngToast" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/lib/qrcode-generator" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/lib/requirejs" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/lib/select2" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/lib/selectize" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/lib/sifter" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/lib/sockjs" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/lib/sockjs-client" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/lib/stacktrace-js" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/lib/stomp-websocket" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/lib/ui-select" charset="windows-1252" />
+  </component>
+</project>

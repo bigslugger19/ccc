@@ -1,0 +1,78 @@
+[ng\:cloak], [ng-cloak], .ng-cloak {
+  display: none !important;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+  background-color: @black;
+}
+
+
+@font-face {
+  font-family: reef;
+  src: url(/fonts/reef.otf);
+}
+
+body * {
+  font-family: reef;
+}
+
+.btn-primary {
+  background-color: @darkBlue;
+  border-color: darken(@darkBlue, 10%);
+}
+
+.btn-info {
+  background-color: @lightBlue;
+  border-color: darken(@lightBlue, 10%);
+}
+
+.btn-warning {
+  background-color: @yellow;
+  border-color: darken(@yellow, 10%);
+}
+
+.btn-danger {
+  background-color: @red;
+  border-color: darken(@red, 10%);
+}
+
+.btn-success {
+  background-color: @green;
+  border-color: darken(@green, 10%);
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+[contenteditable="true"]:focus {
+  outline: none;
+}
+
+.box-dark {
+  background: @black;
+  color: @white;
+}
+
+.box-dark * table * {
+  color: @white;
+}
+
+.box {
+  border-radius: 5px;
+}
+
+
+.modal-body.box-body {
+  padding: 10px 30px;
+}
