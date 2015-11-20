@@ -1,0 +1,7 @@
+server:
+  contextPath: /ccc
+  port: 8080
+
+spring:
+  profiles:
+    active: postgres

@@ -7,10 +7,10 @@ window.angularModuleName = 'CCC';
         'ui.router',
         'ui.bootstrap',
         'LocalForageModule',
-        'angular-web-notification',
+        /*'angular-web-notification',*/
         'ngStomp',
         'ui.select',
-        'chart.js',
+        /*'chart.js',*/
         'ngToast'
     ])
         .config(config)
