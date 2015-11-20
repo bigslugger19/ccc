@@ -1,0 +1,40 @@
+<!doctype html>
+<html ng-app="Cats">
+<head>
+    <base href="/ui/">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title translate>global.app_name</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+    <link rel="icon" type="image/png" href="/img/acct-logo-32.png">
+
+    <!-- wro chokes on these -->
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/lib/fuelux/dist/css/fuelux.min.css">
+    <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/lib/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="/lib/ui-select/dist/select.min.css">
+    <link rel="stylesheet" href="/lib/select2/dist/css/select2.min.css">
+    <link rel="stylesheet" href="/lib/selectize/dist/css/selectize.bootstrap3.css">
+    <link rel="stylesheet" href="/lib/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.min.css">
+    <link rel="stylesheet" href="/lib/chartist/dist/chartist.min.css">
+
+
+    <link rel="stylesheet" href="/lib/adminlte/dist/css/AdminLTE.min.css">
+    <link rel="stylesheet" href="/lib/adminlte/dist/css/skins/_all-skins.min.css">
+    <link rel="stylesheet" href="/lib/adminlte/plugins/iCheck/square/blue.css">
+
+
+    <link rel="stylesheet" href="/css/ccc.css">
+
+</head>
+<<body ng-cloak class="fuelux hold-transition ng-cloak fixed" ng-controller="GlobalController as global"
+       ng-class="global.bodyClass">
+
+<div ui-view></div>
+
+<script src="/js/lib.js"></script>
+<script src="/js/ccc.js"></script>
+</body>
+</html>

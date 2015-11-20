@@ -1,8 +1,22 @@
 package org.rmcc.ccc.model;
 
 import java.io.Serializable;
-import javax.persistence.*;
 import java.sql.Timestamp;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.NamedQuery;
+import javax.persistence.SequenceGenerator;
+import javax.persistence.Table;
+
+import org.apache.commons.csv.CSVRecord;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 
 /**
@@ -234,6 +248,47 @@ public class CameraMonitor implements Serializable {
 
 	public void setStudyArea(StudyArea studyArea) {
 		this.studyArea = studyArea;
+	}
+
+	@JsonIgnore
+	public String[] getFileHeaderMappings() {
+		return new String[]{
+				"LogID",
+				"DeploymentId",
+				"CheckDate",
+				"CheckTime",
+				"StudyAreaID",
+				"ResearchecNames",
+				"WeatherTemp(F)",
+				"No Of Pics", 
+				"New Camera ID",
+				"New Batteries",
+				"New Card",
+				"CameraID/TCorrect",
+				"CameraDelaySetting",
+				"LureInfo",
+				"WildlifeSign",
+				"WildlifeSignSpecies",
+				"WildlifeSeen",
+				"Comments",
+				"SpeciesID"
+						};
+	}
+	
+	@JsonIgnore
+	public String getFileName() {
+		return "Species.csv";
+	}
+
+	@JsonIgnore
+	public Species getFromCsvRecord(CSVRecord record) {
+		Integer speciesId = null;
+		try { speciesId = Integer.parseInt(record.get("SpeciesID")); } catch (NumberFormatException e) {}
+		if (speciesId != null) {
+			Species species = new Species(speciesId, record.get("CommonName"), record.get("LatinName"), record.get("ShortcutKey"));
+			return species;
+		}
+		return null;
 	}
 
 }

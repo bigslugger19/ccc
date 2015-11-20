@@ -1,8 +1,21 @@
 package org.rmcc.ccc.model;
 
 import java.io.Serializable;
-import javax.persistence.*;
 import java.util.List;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.NamedQuery;
+import javax.persistence.OneToMany;
+import javax.persistence.SequenceGenerator;
+import javax.persistence.Table;
+
+import org.apache.commons.csv.CSVRecord;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 
 /**
@@ -12,12 +25,12 @@ import java.util.List;
 @Entity
 @Table(name="species")
 @NamedQuery(name="Species.findAll", query="SELECT s FROM Species s")
-public class Species implements Serializable {
+public class Species implements Serializable, BaseModel {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@SequenceGenerator(name="SPECIES_SPECIESID_GENERATOR", sequenceName="SPECIES_ID_SEQ")
-	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="SPECIES_SPECIESID_GENERATOR")
+//	@SequenceGenerator(name="SPECIES_SPECIESID_GENERATOR", sequenceName="SPECIES_ID_SEQ")
+//	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="SPECIES_SPECIESID_GENERATOR")
 	@Column(name="species_id", unique=true, nullable=false)
 	private Integer id;
 
@@ -43,6 +56,13 @@ public class Species implements Serializable {
 	private List<DetectionDetail> detectionDetails;
 
 	public Species() {
+	}
+
+	public Species(Integer id, String commonName, String latinName, String shortcutKey) {
+		this.id = id;
+		this.commonName = commonName;
+		this.latinName = latinName;
+		this.shortcutKey = shortcutKey;
 	}
 
 	public Integer getId() {
@@ -129,4 +149,27 @@ public class Species implements Serializable {
 		this.detectionDetails = detectionDetails;
 	}
 
+	@Override
+	@JsonIgnore
+	public String[] getFileHeaderMappings() {
+		return new String[]{"SpeciesID","CommonName","LatinName","ShortcutKey"};
+	}
+	
+	@Override
+	@JsonIgnore
+	public String getFileName() {
+		return "Species.csv";
+	}
+
+	@Override
+	@JsonIgnore
+	public Species getFromCsvRecord(CSVRecord record) {
+		Integer speciesId = null;
+		try { speciesId = Integer.parseInt(record.get("SpeciesID")); } catch (NumberFormatException e) {}
+		if (speciesId != null) {
+			Species species = new Species(speciesId, record.get("CommonName"), record.get("LatinName"), record.get("ShortcutKey"));
+			return species;
+		}
+		return null;
+	}
 }
